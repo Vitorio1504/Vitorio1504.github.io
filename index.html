@@ -334,7 +334,14 @@
                 }
             })
         }
+                function mobileCheck(size){
+            if (size.matches) {
+                window.location.href = "mobile/mindex.html"
+            }
+        }
 
+        var x = window.matchMedia("(max-width:768px)")
+        mobileCheck(x);
     </script>
 </body>
 
