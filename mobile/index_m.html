@@ -40,18 +40,7 @@
             min-height: 25px;
         }
 
-        nav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #1A0601;
-            overflow-x: hidden;
-            overflow-y: hidden;
-            transition: 0.5s;
-        }
+
         #logo{
             display: flex;
             align-items: center;
@@ -66,10 +55,7 @@
             left: 20px;
         }
 
-        .navbut {
-            position: relative;
-            width: 100%;
-        }
+
 
 
         main {
@@ -104,6 +90,35 @@
             margin: 0;
             padding: 0;
         }
+        nav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #1A0601;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            transition: 0.5s;
+            display: flex;
+            flex-direction: column;
+            color: gold;
+            justify-content: flex-start;
+        }
+        .navbut, .navbutintro {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            font-size: 30px;
+            height: 50px;
+            margin-left: 30px;
+        }
+        #close{
+           align-self: flex-end;
+           margin: 15px;
+           font-size: 20px;
+        }
     </style>
 </head>
 
@@ -114,7 +129,11 @@
         <div id="logo"><img src="https://static.ageofempires.com/aoe/wp-content/themes/msgpwebteam/dist/images/age1-footer-logo_fecedc4d.png"></div>
     </header>
     <nav id="sideMenu">
-            
+        <div id="close" onclick="closeNav()"><i class="fas fa-times"></i></div>
+        <div class="navbutintro">Úvod</div>
+        <div class="navbut">Hry</div>
+        <div class="navbut">Herní prvky</div>
+        <div class="navbut">Ostatní</div>
     </nav>
         <main>
             <h1>Vítejte!</h1>
@@ -158,7 +177,9 @@
         
         function openNav() {
             document.getElementById("sideMenu").style.width = "66%";
-            document.body.style.backgroundColor = "rgba(0,0,0,0.8)";
+        }
+        function closeNav() {
+            document.getElementById("sideMenu").style.width = "0%";
         }
 
     </script>
