@@ -79,6 +79,7 @@
         footer{
             height: 30px;
             width: 100%;
+            font-size: 13px;
             position: absolute;
             bottom: 0;
             color: white;
@@ -107,17 +108,58 @@
             justify-content: flex-start;
         }
         .navbut, .navbutintro {
+            position: relative;
             display: flex;
             align-items: center;
             width: 100%;
             font-size: 30px;
             height: 50px;
-            margin-left: 30px;
+            margin-left: 45px;
+        }
+        .navbut>i{
+            position: absolute;
+            left:-20px;
+        }
+        .navbutlist{
+            display: none;
+            margin-left: 50px;
+            flex-direction: column;
+        }
+        .navbutlistbut,
+        .navbutlistbutsub
+        {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            height: 35px;
+        }
+        .navbutlistbutsub>i{
+            position: absolute;
+            left:-20px;
+        }
+        .navbutlistbutsublist{
+            display: none;
+            margin-left: 55px;
+            flex-direction: column;
+        }
+        .navbutlistbutsublistbut{
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            height: 30px;
         }
         #close{
            align-self: flex-end;
            margin: 15px;
            font-size: 20px;
+        }
+        @media only screen and (max-width:375px)
+        {
+            footer{
+                font-size: 10px;
+            }
         }
     </style>
 </head>
@@ -131,9 +173,74 @@
     <nav id="sideMenu">
         <div id="close" onclick="closeNav()"><i class="fas fa-times"></i></div>
         <div class="navbutintro">Úvod</div>
-        <div class="navbut">Hry</div>
-        <div class="navbut">Herní prvky</div>
-        <div class="navbut">Ostatní</div>
+        <div class="navbut"><i class="fas fa-angle-right"></i>Hry</div>
+        <div class="navbutlist">
+            <div class="navbutlistbut">AoE III</div>
+            <div class="navbutlistbut">Warchiefs</div>
+            <div class="navbutlistbut">Asian Dynasties</div>
+            <div class="navbutlistbut">Definitive</div>
+        </div>
+        <div class="navbut"><i class="fas fa-angle-right"></i>Herní prvky</div>
+        <div class="navbutlist">
+            <div class="navbutlistbutsub"><i class="fas fa-angle-right"></i>Civilizace</div>
+            <div class="navbutlistbutsublist">
+                <div class="navbutlistbutsublistbut">Španělé</div>
+                <div class="navbutlistbutsublistbut">Velká Británie</div>
+                <div class="navbutlistbutsublistbut">Francouzi</div>
+                <div class="navbutlistbutsublistbut">Portugalci</div>
+                <div class="navbutlistbutsublistbut">Holanďané</div>
+                <div class="navbutlistbutsublistbut">Rusové</div>
+                <div class="navbutlistbutsublistbut">Němci</div>
+                <div class="navbutlistbutsublistbut">Osmané</div>
+                <div class="navbutlistbutsublistbut">Irokézové</div>
+                <div class="navbutlistbutsublistbut">Siouxové</div>
+                <div class="navbutlistbutsublistbut">Aztékové</div>
+                <div class="navbutlistbutsublistbut">Japonci</div>
+                <div class="navbutlistbutsublistbut">Číňané</div>
+                <div class="navbutlistbutsublistbut">Indové</div>
+                <div class="navbutlistbutsublistbut">Švédi</div>
+                <div class="navbutlistbutsublistbut">Inkové</div>
+                <div class="navbutlistbutsublistbut">&#42;Spojené státy</div>
+            </div>
+            <div class="navbutlistbut">Vysvětlivky</div>
+            <div class="navbutlistbut">Ekon. jednotky</div>
+            <div class="navbutlistbutsub"><i class="fas fa-angle-right"></i>Voj. jednotky</div>
+            <div class="navbutlistbutsublist">
+                <div class="navbutlistbutsublistbut">Pěchota</div>
+                <div class="navbutlistbutsublistbut">Kavalerie</div>
+                <div class="navbutlistbutsublistbut">Dělostřelectvo</div>
+                <div class="navbutlistbutsublistbut">Loďstvo</div>
+            </div>
+            <div class="navbutlistbut">Budovy</div>
+            <div class="navbutlistbutsub"><i class="fas fa-angle-right"></i>HC karty</div>
+            <div class="navbutlistbutsublist">
+                <div class="navbutlistbutsublistbut">Španělé</div>
+                <div class="navbutlistbutsublistbut">Velká Británie</div>
+                <div class="navbutlistbutsublistbut">Francouzi</div>
+                <div class="navbutlistbutsublistbut">Portugalci</div>
+                <div class="navbutlistbutsublistbut">Holanďané</div>
+                <div class="navbutlistbutsublistbut">Rusové</div>
+                <div class="navbutlistbutsublistbut">Němci</div>
+                <div class="navbutlistbutsublistbut">Osmané</div>
+                <div class="navbutlistbutsublistbut">Irokézové</div>
+                <div class="navbutlistbutsublistbut">Siouxové</div>
+                <div class="navbutlistbutsublistbut">Aztékové</div>
+                <div class="navbutlistbutsublistbut">Japonci</div>
+                <div class="navbutlistbutsublistbut">Číňané</div>
+                <div class="navbutlistbutsublistbut">Indové</div>
+                <div class="navbutlistbutsublistbut">Švédi</div>
+                <div class="navbutlistbutsublistbut">Inkové</div>
+                <div class="navbutlistbutsublistbut">&#42;Spojené státy</div>
+            </div>
+            <div class="navbutlistbut">Mapy</div>
+        </div>
+        <div class="navbut"><i class="fas fa-angle-right"></i>Ostatní</div>
+        <div class="navbutlist">
+            <div class="navbutlistbut">Screenshoty</div>
+            <div class="navbutlistbut">Soundtrack</div>
+            <div class="navbutlistbut">Titulky</div>
+            <div class="navbutlistbut">Odkazy</div>
+        </div>
     </nav>
         <main>
             <h1>Vítejte!</h1>
@@ -182,7 +289,29 @@
             document.getElementById("sideMenu").style.width = "0%";
         }
 
-    </script>
+        var acc = document.querySelectorAll("div.navbut, div.navbutlistbutsub");
+var i;
+
+
+        for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "flex") {
+        panel.style.display = "none"
+    } else {
+      panel.style.display = "flex";
+    }
+  });
+}
+    //     function mobileCheck(size) {
+    //         if (size.matches) {
+    //             window.location.href = "../index.html"
+    //         }
+    //     }
+
+    //     var x = window.matchMedia("(min-width:768px)")
+    //     mobileCheck(x);
+    // </script>
 </body>
 
 </html>
