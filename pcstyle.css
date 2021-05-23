@@ -19,7 +19,9 @@ body {
         header>img {
             width: 100%;
         }
-
+	header>h1{
+		font-size:30px;
+	}
         .basecontainer {
             width: 80%;
             display: flex;
