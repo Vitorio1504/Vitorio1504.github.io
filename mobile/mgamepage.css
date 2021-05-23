@@ -1,0 +1,36 @@
+main>img{
+    width:90%;
+    margin-bottom: 20px;
+}
+main>.sidebyside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+.sidebyside>img{
+    width: 48%;
+}
+main>.featurelist{
+    font-family: 'Hind Siliguri';
+    width: 90%;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+.ages{
+    font-family: 'Hind Siliguri';
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.ages>.age{
+    margin-top: 10px;
+}
+.featurelist.item{
+    margin: 5px 0;
+}

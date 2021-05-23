@@ -1,0 +1,31 @@
+main>img{
+    width:70%;
+}
+main>.sidebyside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+.sidebyside>img{
+    width: 48%;
+}
+main>.featurelist{
+    font-family: 'Hind Siliguri';
+    width: 80%;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+.ages{
+    font-family: 'Hind Siliguri';
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.featurelist.item{
+    margin: 5px 0;
+}

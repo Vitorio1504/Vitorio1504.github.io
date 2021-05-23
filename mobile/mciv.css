@@ -1,0 +1,26 @@
+main>p{text-align: left;}
+main > .flag{
+    width: 50%;
+    border: ridge 3px black;
+    margin: 10px 0;
+}
+main>img{width: 70%;
+margin: 10px 0}
+.civbasic{
+    font-family: 'Hind Siliguri';
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.civbasic > p{
+    margin: 5px 0;
+}
+.civbasic > p > span{
+    font-weight: 600;
+}
+.history{
+    font-style: italic;
+    color: rgba(1,1,1,0.8)
+}

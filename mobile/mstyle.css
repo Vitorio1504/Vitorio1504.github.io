@@ -1,0 +1,176 @@
+html, body {
+    overflow-x: hidden;
+  }
+body{
+    position: relative;
+    display: flex;
+    background-image: url("https://i.pinimg.com/originals/a2/d2/d4/a2d2d404c591e0cc4c5da4d6e4585e0d.jpg");
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 75px;
+    background-image: url("https://i.pinimg.com/600x315/5c/43/ac/5c43ac37b26f2c4d74e6aeb430d529e6.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+}
+
+header>span{
+    font-size: 25px;
+    min-width: 25px;
+    min-height: 25px;
+}
+header>a,a:visited,a:link{
+    color: gold;
+    text-decoration: none;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:30px;
+}
+#logo>img{
+    height:100%;
+}
+#menuopen{
+    position: absolute;
+    left: 20px;
+}
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75px;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+main>p {
+    font-family: 'Hind Siliguri', sans-serif;
+    margin: 20px 20px 0;
+    line-height: 25px;
+}
+main>h1{
+    padding-top: 40px;
+    font-size: 40px;
+}
+main>h2
+{
+    font-size: 35px;
+    padding-top: 20px;
+}
+main>h3
+{
+    font-size: 30px;
+    padding-top: 20px;
+}
+footer{
+    height: 30px;
+    width: 100%;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hind Siliguri', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1A0601;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    color: gold;
+    justify-content: flex-start;
+}
+.navbut, .navbutintro {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 30px;
+    height: 50px;
+    margin-left: 45px;
+}
+.navbut>i{
+    position: absolute;
+    left:-20px;
+}
+.navbutlist{
+    display: none;
+    margin-left: 50px;
+    flex-direction: column;
+}
+.navbutlistbut,
+.navbutlistbutsub
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    height: 35px;
+}
+.navbutlistbutsub>i{
+    position: absolute;
+    left:-20px;
+}
+.navbutlistbutsublist{
+    display: none;
+    margin-left: 55px;
+    flex-direction: column;
+}
+.navbutlistbutsublistbut{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    height: 30px;
+}
+.widget{
+    width: 100%;
+    margin: 20px 0;
+}
+.current
+{color:brown;}
+#close{
+   align-self: flex-end;
+   margin: 15px;
+   font-size: 20px;
+}
+@media only screen and (max-width:375px)
+{
+    footer{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,105 @@
+.unitlist{
+    border: 5px ridge black;
+    width: 70%;
+    display: none;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.unitwindow{
+    border: 5px ridge gray;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.unitmain{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    width: 100%;
+}
+.unitdesc{
+    padding: 5px;
+    font-family: 'Hind Siliguri', sans-serif;
+    border-top: 1px solid black;
+    color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: flex-start;
+}
+.unitportrait{
+    width: 20%;
+    height: fit-content;
+}
+.unitportrait>img{
+    width: 100%
+}
+.unitinfo{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+}
+.unitname{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+}
+.unitstats{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1fr,4);
+}
+.stat{
+    font-family: 'Hind Siliguri';
+    font-size: 1em;
+    max-height: 1fr;
+    display: flex;
+    align-items: center;
+}
+.stat > span{
+    font-weight: 600;
+}
+    .pagination{
+        font-family: 'Hind Siliguri';
+        margin-top: 10px;
+    }
+    .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        transition: color .3s;
+      }
+      .pagination a.active {
+        background-color: #CCA11D;
+        color: white;
+      }
+      .pagination a:hover:not(.active)
+       {
+           background-color: #1A0601;
+           color:white;
+           cursor: pointer;
+        }
+        .pagination div{
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            transition: color .3s;
+          }
+          .pagination div:hover
+          {
+              background-color: #1A0601;
+              color:white;
+              cursor: pointer;
+           }
+@media only screen and (max-width:1440px) {
+    .unitlist{
+        width:100%;
+    }
+}
