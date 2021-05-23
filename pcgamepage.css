@@ -9,6 +9,7 @@ main>.sidebyside{
 }
 .sidebyside>img{
     width: 48%;
+    margin-bottom: 20px;
 }
 main>.featurelist{
     font-family: 'Hind Siliguri';

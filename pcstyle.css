@@ -159,7 +159,15 @@ body {
             flex-direction: column;
             background-image: url(resources/parchment.jpg);
         }
-
+        main>h1{
+            font-size: 30px;
+        }
+        main>h2{
+            font-size: 27px;
+        }
+        main>h3{
+            font-size: 25px;
+        }
         main>p {
             font-family: 'Hind Siliguri', sans-serif;
             margin: 10px;
